@@ -3,6 +3,6 @@ export default (req, res) => {
     .toISOString()
     .replace(/T/, ' ')
     .replace(/\..+/, '');
-
+  console.log('date:', date);
   res.json({ date });
 };
